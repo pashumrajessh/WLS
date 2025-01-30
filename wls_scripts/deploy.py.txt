@@ -1,0 +1,8 @@
+print 'Connecting to Server'
+connect('weblogic','welcome1','t3://localhost:8001')
+appname= 'companyStoreAdmin.ear'
+applocation=r'E:\software\WLS-A11-91-01-labss\labs\Lab12\exercise\companyStoreAdmin.ear'
+print 'deploying Application to Server...'
+deploy(appname,applocation,targets='AdminServer')
+print 'Deployment completed'
+exit()

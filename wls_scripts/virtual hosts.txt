@@ -1,0 +1,50 @@
+A virtual host is a set of host names to which WebLogic
+Server instances (servers) or clusters respond. Create
+virtual hosts in order to maintain more than one server on
+only one machine. Configure virtual hosts to meet your
+specifications.
+
+To create a virtual host:
+
+   1. If you have not already done so, in the Change Center
+of the Administration Console, click Lock & Edit (see Use
+the Change Center).
+   2. In the left pane of the console, expand Environments
+and select Virtual Hosts to open the Virtual Hosts page.
+   3. Click New.
+   4. On the Create a New Virtual Host page, enter the name
+that will identify your virtual host.
+
+      Note: Once you create a virual host, you cannot rename
+it. Instead, you must delete it and create another one that
+uses the new name.
+   5. Click Ok.
+   6. To activate these changes, in the Change Center of the
+Administration Console, click Activate Changes.
+      Not all changes take effect immediately—some require a
+restart
+
+virtual hosting have two types 
+.name based VH
+  2.ip based VH
+In name based VH we use one ip address and different domain 
+names like 
+192.168.50.103 www.xxx.com
+192.168.50.103 www.yyy.com
+192.168.50.103 www.zzz.com.......
+
+this can useful redusing the band width of a network&some 
+else(recommended in local system)
+
+
+coming to ip based u can assign one ip address for one 
+domain like
+
+192.168.50.103 www.xxx.com
+192.168.50.104 www.yyy.com
+192.168.50.105 www.zzz.com
+
+coming to weblogic VH done by using ipbased because to 
+provide high performence for each application.
+ 
+

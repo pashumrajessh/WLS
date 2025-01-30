@@ -1,0 +1,23 @@
+readTemplate(r'C:\Oracle\Middleware\wlserver_10.3\common\templates\domains\wls.jar')
+cd('Servers/AdminServer')
+set('ListenAddress','192.168.1.22')
+set('ListenPort',9099)
+cd('/')
+cd('Security/base_domain/User/weblogic')
+cmo.setPassword('123456789')
+setOption('OverwriteDomain','true')
+writeDomain(r'C:\Oracle\Middleware\user_projects\domains\abcd')
+closeTemplate()
+readDomain(r'C:\Oracle\Middleware\user_projects\domains\abcd')
+
+print 'domain created successfully'
+
+
+
+
+startServer('AdminServer','abcd','t3://192.168.1.22:9099','weblogic','123456789',r'C:\Oracle\Middleware\user_projects\domains\abcd')
+
+
+
+print 'AdminServer started successfully'
+

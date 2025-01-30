@@ -1,0 +1,12 @@
+appPath='C:/student/course/labs/Lab11/exercise/benefits.war'
+appName='benefits.war'
+targets='MS1'
+username='weblogic'
+password='weblogic'
+serverURL='t3://localhost:7777'
+connect(username,password,serverURL)
+edit()
+startEdit()
+deploy(appName=appName,path=appPath,targets=targets)
+save()
+activate()
